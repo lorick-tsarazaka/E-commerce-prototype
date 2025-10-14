@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — MyShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/img/shop.png">
+</head>
+<body>
+  <!-- ===== Fixed Navbar ===== -->
+  <nav class="navbar bg-white fixed-top shadow-sm py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand fw-bold fs-4 color-primary" href="home.html">My<span class="text-primary">Shop</span></a>
+      <a class="btn btn-outline-primary position-relative" href="cart.html">
+        <i class="bi bi-cart-fill"></i>
+        <span id="cart-count" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main-content container py-5 flex-grow-1">
+    <div class="pt-5 d-flex flex-column align-items-center">
+      <h2 class="text-center fw-bold mb-5 color-primary">
+        <i class="bi bi-credit-card-2-front me-2"></i> Billing & Payment
+      </h2>
+
+      <form id="checkout-form" class="row g-3 p-4 bg-white container col-md-8 rounded-4 shadow-sm">
+        <div class="col-md-6">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-12">
+          <label class="form-label">Address</label>
+          <input type="text" class="form-control" id="address" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">City</label>
+          <input type="text" class="form-control" id="city" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">ZIP Code</label>
+          <input type="text" class="form-control" id="zip" required>
+        </div>
+        <div class="col-12 text-end">
+          <button class="btn btn-success btn-lg shadow-sm" type="submit">
+            Confirm & Pay <i class="bi bi-arrow-right-circle ms-2"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer bg-dark text-white text-center py-4 mt-auto">
+    <div class="container small">
+      © 2025 MyShop — All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('checkout-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      // Simulate successful payment
+      localStorage.removeItem('cart');
+      alert('Thank you! Your order has been placed.');
+      window.location.href = 'home.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyShop — Home</title>
+  <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/img/shop.png">
+</head>
+<body>
+<!-- ===== Fixed Navbar Simplified ===== -->
+<nav class="navbar bg-white fixed-top shadow-sm py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Logo / Brand -->
+    <a class="navbar-brand fw-bold fs-4 color-primary" href="home.html">
+      My<span class="text-primary">Shop</span>
+    </a>
+
+    <!-- Cart Button -->
+    <a class="btn btn-outline-primary position-relative" href="cart.html">
+      <i class="bi bi-cart-fill"></i>
+      <span id="cart-count" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+    </a>
+  </div>
+</nav>
+
+  <!-- ===== Hero Section ===== -->
+  <header class="hero-section d-flex align-items-center text-center text-white">
+    <div class="container pt-5">
+      <h1 class="display-4 fw-bold mb-3 animate-fade pt-5 mt-md-5">Welcome to MyShop</h1>
+      <p class="lead mb-md-5 pb-md-3">Carefully selected products. Fast and reliable delivery.</p>
+    </div>
+  </header>
+
+  <!-- ===== Products Section ===== -->
+  <main class="flex-grow-1 container py-5 mt-0">
+    <h2 class="text-center fw-bold mb-5 color-primary">Our Products</h2>
+    <div id="products-row" class="row g-4">
+      <!-- Cards injected by JS -->
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer bg-dark text-white text-center py-4 mt-auto">
+    <div class="container small">
+      © 2025 MyShop — All rights reserved.
+    </div>
+  </footer>
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

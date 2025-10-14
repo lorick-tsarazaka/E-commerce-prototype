@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart — MyShop</title>
+  <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/img/shop.png">
+</head>
+<body>
+<!-- ===== Fixed Navbar Simplified ===== -->
+<nav class="navbar bg-white fixed-top shadow-sm py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Logo / Brand -->
+    <a class="navbar-brand fw-bold fs-4 color-primary" href="home.html">
+      My<span class="text-primary">Shop</span>
+    </a>
+
+    <!-- Cart Button -->
+    <a class="btn btn-outline-primary position-relative" href="cart.html">
+      <i class="bi bi-cart-fill"></i>
+      <span id="cart-count" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+    </a>
+  </div>
+</nav>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main-content container py-5 flex-grow-1">
+    <div class="pt-5 mt-5">
+        <h2 class="text-center fw-bold mb-5 color-primary">
+        <i class="bi bi-cart-fill me-2"></i> Your Shopping Cart
+        </h2>
+      <div id="cart-container" class="bg-white p-4 rounded-4 shadow-sm"></div>
+
+      <div class="mt-4 d-flex justify-content-end">
+        <a href="checkout.html" class="btn btn-success btn-lg shadow-sm" id="checkout-btn">
+          Proceed to Checkout
+          <i class="bi bi-arrow-right-circle ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer bg-dark text-white text-center py-4 mt-auto">
+    <div class="container small">
+      © 2025 MyShop — All rights reserved.
+    </div>
+  </footer>
+
+<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/cart.js"></script>
+</body>
+</html>

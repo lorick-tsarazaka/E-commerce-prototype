@@ -1,0 +1,143 @@
+/* Déclaration de la police Inter en local */
+@font-face {
+  font-family: 'Inter'; /* nom que tu vas utiliser dans ton CSS */
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'); /* chemin vers le fichier */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+*{
+  
+}
+body{
+  font-family: 'Calibri','Inter',sans-serif;
+  background:#f8f9fb;
+}
+:root{
+--primary:#0e54b1;
+--muted:#6c757d;
+}
+.color-primary{color:var(--primary)}
+.btn-primary{background:var(--primary);border-color:var(--primary)}
+.card-product{border-radius:14px;overflow:hidden}
+.card-product img{height:200px;object-fit:cover}
+.product-title{min-height:48px}
+/* responsive tweaks */
+@media (max-width:576px){
+.card-product img{height:160px}
+}
+
+/* ===== Structure générale ===== */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fc;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ===== Navbar fixe ===== */
+.navbar {
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  color: #0e54b1 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #613de0 !important;
+}
+
+/* ===== Hero section ===== */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(135deg, #0e54b1, #613de0);
+  color: white;
+  position: relative;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.hero-section .btn-light {
+  border-radius: 30px;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn-light:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* ===== Animation ===== */
+.animate-fade {
+  animation: fadeInUp 1s ease both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Section produits ===== */
+main {
+  flex: 1 0 auto;
+  margin-top: 120px; /* espace pour la navbar fixe */
+}
+
+.color-primary {
+  color: #0e54b1;
+}
+
+/* ===== Cards produits ===== */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== Footer ===== */
+.footer {
+  flex-shrink: 0;
+  background-color: #0e54b1 !important;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 90vh;
+    padding: 80px 20px;
+  }
+  main {
+    margin-top: 100px;
+  }
+}
+
+
