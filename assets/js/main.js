@@ -70,7 +70,7 @@ container.innerHTML = `
 <div class="col-md-6">
 <img src="${p.image||'../assets/img/placeholder.png'}" class="img-fluid shadow-sm rounded-3" alt="${p.name}">
 </div>
-<div class="col-md-6 d-flex flex-column justify-content-center">
+<div class="col-md-6 d-flex pt-3 pt-md-0 flex-column justify-content-center">
 <h2 class="fw-bold">${p.name}</h2>
 <p class="text-muted">${p.category}</p>
 <h3 class="text-primary">${p.price} $</h3>
