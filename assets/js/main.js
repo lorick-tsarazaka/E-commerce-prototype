@@ -22,7 +22,7 @@ col.innerHTML = `
 <h5 class="product-title fs-6 fw-bold">${p.name}</h5>
 <p class="text-muted mb-2 small">${p.category}</p>
 <div class="d-flex justify-content-between align-items-center">
-<div class="fs-5 fw-bold">${p.price.toFixed(2)} €</div>
+<div class="fs-5 fw-bold">${p.price} €</div>
 <div>
 <a href="product.html?id=${p.id}" class="btn btn-sm btn-outline-primary me-2">Voir</a>
 <button class="btn btn-sm btn-primary" data-id="${p.id}">Ajouter</button>
@@ -73,7 +73,7 @@ container.innerHTML = `
 <div class="col-md-6 d-flex flex-column justify-content-center">
 <h2 class="fw-bold">${p.name}</h2>
 <p class="text-muted">${p.category}</p>
-<h3 class="text-primary">${p.price.toFixed(2)} €</h3>
+<h3 class="text-primary">${p.price} €</h3>
 <p>${p.description}</p>
 <div>
 <button id="add-btn" class="btn btn-primary">Ajouter au panier</button>
