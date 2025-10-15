@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Bluetooth Audio Headphones",
     "category": "Audio",
-    "price": 39.99,
+    "price": "--.--",
     "description": "Wireless headphones with noise cancellation, 20-hour battery life, and comfortable ear cushions.",
     "image": "../assets/img/hearphone.png"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "RGB Mechanical Keyboard",
     "category": "Peripherals",
-    "price": 79.90,
+    "price": "--.--",
     "description": "Mechanical keyboard with tactile switches, RGB backlight, and aluminum chassis.",
     "image": "../assets/img/keyboard.png"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Gaming Mouse 8000 DPI",
     "category": "Peripherals",
-    "price": 29.99,
+    "price": "--.--",
     "description": "Ergonomic high-precision mouse with 8000 DPI optical sensor and 6 programmable buttons.",
     "image": "../assets/img/mouse.png"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Waterproof Urban Backpack",
     "category": "Accessories",
-    "price": 49.50,
+    "price": "--.--",
     "description": "Water-resistant backpack with a laptop compartment up to 15 inches.",
     "image": "../assets/img/bag.png"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "FitPro Smartwatch",
     "category": "Wearable",
-    "price": 59.00,
+    "price": "--.--",
     "description": "Health tracking, sleep monitoring, and real-time smartphone notifications.",
     "image": "../assets/img/smartwatch.png"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "name": "Portable Bluetooth Speaker",
     "category": "Audio",
-    "price": 35.99,
+    "price": "--.--",
     "description": "360° powerful sound, 12-hour battery life, and water-resistant (IPX6).",
     "image": "../assets/img/speaker.png"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "name": "Full HD 1080p Webcam",
     "category": "Peripherals",
-    "price": 45.00,
+    "price": "--.--",
     "description": "Webcam with built-in microphone and Windows/macOS compatibility.",
     "image": "../assets/img/webcam.png"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "name": "20000mAh Power Bank",
     "category": "Accessories",
-    "price": 25.99,
+    "price": "--.--",
     "description": "Dual USB output, 18W fast charge, compact design for travel.",
     "image": "../assets/img/powerbank.png"
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "name": "24'' Full HD IPS Monitor",
     "category": "Computing",
-    "price": 129.99,
+    "price": "--.--",
     "description": "24-inch IPS display with HDMI connectivity and low power consumption.",
     "image": "../assets/img/monitor.png"
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "name": "LED Desk Lamp",
     "category": "Home & Office",
-    "price": 19.90,
+    "price": "--.--",
     "description": "Adjustable LED lamp with USB port and flexible arm.",
     "image": "../assets/img/lampe.png"
   }
